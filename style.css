@@ -34,6 +34,12 @@ a {
   display: inline-block;
   padding-right: 1.5em;
   text-decoration: none;
+  transition: all 0.4s;
+}
+li,
+a:hover {
+  color: rgb(33, 194, 87);
+  transform: scale(1.1);
 }
 .panel {
   padding: 3em 2em;
@@ -60,7 +66,7 @@ a {
 .hero-section p {
   font-size: 1.2em;
   margin-top: 1.5em;
-  margin-bottom: 40px;
+  margin-bottom: 5em;
   line-height: 2em;
   width: 80%;
 }
@@ -78,6 +84,8 @@ a {
 }
 .cta-button:hover {
   background-color: rgba(33, 194, 87, 0.5);
+  color: rgb(19, 17, 17);
+  border-color: black;
 }
 .cta-button:active {
   opacity: 0.8;
