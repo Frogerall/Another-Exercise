@@ -3,20 +3,21 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  font-size: 1em;
   box-sizing: border-box;
 }
 .heading {
   background: url("Laptop.svg") center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("Laptop.svg") center/cover;
+  height: 100vh;
 }
 .menu-icon,
 .close-button {
   display: none;
 }
-.menu-bar {
-  display: flex;
+.name {
+  padding-left: 5em;
+  font-size: 2em;
 }
 .nav-bar {
   display: flex;
@@ -31,42 +32,40 @@ a {
   display: block;
   color: white;
   display: inline-block;
-  padding-right: 15px;
+  padding-right: 1.5em;
   text-decoration: none;
 }
 .panel {
-  padding: 15px 25px;
-}
-.name {
-  padding-left: 5em;
+  padding: 3em 2em;
 }
 .my-name {
-  color: rgb(88, 204, 78);
+  color: rgba(4, 28, 29, 0.562);
   font-weight: bold;
+  font-size: 3em;
+  margin: 0.5em auto;
+  padding-right: 2.5em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
 /* Heading */
 .hero-section {
   color: #fff;
   text-align: center;
-  padding: 80px 20px;
-  height: 75vh;
   display: flex;
-  justify-content: center;
+  align-self: flex-end;
   align-items: center;
   flex-direction: column;
+  max-width: 90%;
+  margin: 10em auto;
 }
-.hero-text {
-  margin-bottom: 25px;
-}
-.hero-subtext {
-  font-size: 18px;
+.hero-section p {
+  font-size: 1.2em;
+  margin-top: 1.5em;
   margin-bottom: 40px;
   line-height: 2em;
   width: 80%;
 }
 .cta-button {
   display: inline-block;
-
   background-color: rgb(5, 5, 5, 0.5);
   color: #fff;
   padding: 15px 30px;
@@ -98,175 +97,36 @@ a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
 }
 .bio {
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
   color: #333;
   margin-bottom: 20px;
   width: 50ch;
   padding-left: 1.5em;
+  align-items: center;
 }
 .skills {
   margin-top: 2em;
-  font-size: 16px;
+  font-size: 1em;
   color: #666;
 }
-/* Projects Section */
-.projects-section h2 {
-  text-align: center;
-  font-size: 3em;
-}
-/* Shared styles for project cards and carousel */
-.projects-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5em;
-}
-/* .project-cards {
-  display: flex;
-}
-.project-card {
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
-  margin: 0;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-.project-card:hover {
-  transform: scale(1.1);
-}
-.project-card img {
-  max-width: 100%;
-  border-radius: 10px;
-} */
-.project-cards {
-  display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next line */
-  justify-content: center;
-  margin-bottom: 5em;
-}
-.project-card {
-  flex: 0 0 calc(33.333% - 20px); /* Set a fixed width for each project card with margin */
-  margin: 10px; /* Add some space between the cards */
-  max-width: 300px; /* Set a maximum width for each card */
-  border-radius: 10px;
-  text-align: center;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  overflow: hidden; /* Hide overflow content to prevent overlap */
-}
-.project-card-2 {
-  display: flex;
-  margin: 10px;
-  max-width: 300px; /* Set a maximum width for each card */
-  border-radius: 10px;
-  text-align: center;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  overflow: hidden; /* Hide overflow content to prevent overlap */
-  justify-content: flex-end;
-  flex-direction: column;
-  font-size: 1em;
-}
-.project-card-2 p {
-  font-size: 20px;
-}
-.project-card:hover {
-  transform: scale(1.1);
-}
-.project-card-2:hover {
-  transform: scale(1.1);
-}
-.project-card img {
-  width: 100%; /* Ensure images inside project cards take 100% width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px;
-}
 /* Carousel */
-.carousel {
-  max-width: 80%;
+.projects-section {
+  width: 80%;
   margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-.mySlides {
-  display: none;
-}
-img {
-  vertical-align: middle;
-}
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
   text-align: center;
+  color: rgba(4, 28, 29, 0.562);
 }
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active {
-  background-color: #717171;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px;
-  }
-}
-@keyframes slide {
-  0%,
-  100% {
-    transform: translateX(0%);
-  }
-  33.33% {
-    transform: translateX(-82.33%);
-  }
-  66.66% {
-    transform: translateX(-160.66%);
-  }
-}
-.carousel-inner {
-  animation: slide 8s infinite;
+.projects-section h2 {
+  font-size: 3em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 3em;
+  padding: 2em;
 }
 /* Testimonials */
 .testimonials-section {
@@ -297,16 +157,20 @@ img {
   max-width: 300px;
   margin: 0 auto;
 }
+.contact-section h2 {
+  margin-bottom: 1.3em;
+}
 .contact-button {
   display: inline-block;
   background-color: rgb(81, 211, 172);
-
-  padding: 15px 30px;
+  padding: 1em 2em;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2;
   border-radius: 5px;
-
   font-weight: 600;
+}
+.contact-button:hover {
+  opacity: 0.8;
 }
 .form-group {
   margin-bottom: 20px;
@@ -332,6 +196,13 @@ img {
 .contact-info {
   margin-top: 30px;
   font-size: 18px;
+}
+.contact-info a {
+  color: black;
+  transition: color 0.15s;
+}
+.contact-info a:hover {
+  color: rgb(212, 205, 205);
 }
 /* Footer */
 .footer {
@@ -384,12 +255,9 @@ img {
   font-size: 14px;
 }
 @media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
   .name {
     font-size: 2em;
-    padding-left: 0;
+    padding-left: 1em;
   }
   .menu-icon,
   .close-button {
@@ -397,13 +265,13 @@ img {
   }
   .menu-bar {
     color: #fff;
-    padding: 15px;
-    text-align: right;
+    padding: 2em;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    font-size: 0.8em;
   }
   .menu-icon {
     transition: opacity 0.15s;
@@ -457,60 +325,56 @@ img {
   .close-button:active {
     color: #863232;
   }
-  .panel ul {
-    list-style: none;
-    padding: 0;
+  li {
+    font-size: 1.2em;
+    display: block;
+    padding: 1.5em 3em;
+  }
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.185);
+  }
+  .hero-section {
+    margin-top: 10em;
+  }
+  .hero-section h1 {
+    margin-top: 0.5em;
+    font-size: 1.8em;
+  }
+  .hero-section p {
+    margin-top: 1em;
+    font-size: 0.7em;
+  }
+  .profile-picture {
+    width: 15em;
+    height: 15em;
+  }
+  .my-name {
+    font-size: 1.5em;
+    padding-right: 0;
+  }
+  .about-me-section {
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+  .about-me-section p {
+    font-size: 0.7em;
     text-align: center;
   }
-  .panel ul li {
-    padding: 15px;
-    display: block;
+  .bio {
+    padding: 0 0.5em;
+    max-width: 26ch;
   }
-  .panel ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding-left: 80px;
+  .projects-section h2 {
+    font-size: 2em;
+    padding: 2em;
   }
-  .hero-text h1 {
-    font-size: 30px;
-    font-weight: 300;
-  }
-  .project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2em;
-  }
-  .project-card,
-  .project-card-2 {
-    margin-bottom: 50px;
-  }
+
   .footer-nav {
     flex-direction: column;
     margin-bottom: 10px;
   }
   .footer-nav a {
     margin: 10px 0;
-  }
-  .project-cards {
-    display: flex;
-    max-width: 100%; /* Set maximum width to prevent extending beyond viewport */
-    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
-  }
-  .about-me-section {
-    display: flex;
-    background: #f4f4f4;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 10em 0;
-    flex-direction: column;
-  }
-  .bio {
-    max-width: 25ch;
   }
   .footer-buttons {
     bottom: 15px;
@@ -520,10 +384,10 @@ img {
     width: 25px;
     height: 25px;
   }
-  .profile-picture {
-    margin-bottom: 50px;
+  .contact-section {
+    padding-top: 3em;
   }
-  .about-me-section {
-    padding: 5em 0;
+  .contact-info {
+    margin: 1em;
   }
 }
