@@ -55,7 +55,7 @@ a {
   align-items: center;
   flex-direction: column;
   max-width: 90%;
-  margin: 10em auto;
+  margin: 13em auto;
 }
 .hero-section p {
   font-size: 1.2em;
@@ -368,26 +368,26 @@ a {
     font-size: 2em;
     padding: 2em;
   }
-
+  .contact-section {
+    padding-top: 3em;
+  }
+  .contact-info {
+    margin: 1em;
+  }
   .footer-nav {
     flex-direction: column;
     margin-bottom: 10px;
   }
   .footer-nav a {
     margin: 10px 0;
+    font-size: 0.9em;
   }
   .footer-buttons {
-    bottom: 15px;
-    right: 30px;
+    bottom: 40px;
+    right: 35px;
   }
   .footer-buttons button {
     width: 25px;
     height: 25px;
-  }
-  .contact-section {
-    padding-top: 3em;
-  }
-  .contact-info {
-    margin: 1em;
   }
 }
