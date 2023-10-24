@@ -6,9 +6,8 @@ body {
   box-sizing: border-box;
 }
 .heading {
-  background: url("Laptop.svg") center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("Laptop.svg") center/cover;
+    url("images/Laptop.svg") center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
