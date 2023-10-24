@@ -171,10 +171,7 @@ a:hover {
   padding: 8em 2em;
   background: #20b46f;
   display: flex;
-  justify-content: center;
-}
-.contact-form {
-  margin-right: 3em;
+  justify-content: space-around;
 }
 .contact-button {
   background-color: rgb(81, 211, 172);
@@ -210,6 +207,10 @@ a:hover {
 }
 .contact-info {
   font-size: 1.1em;
+  text-align: left;
+}
+.contact-info p {
+  margin-top: 1em;
 }
 .contact-info a {
   color: black;
