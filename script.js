@@ -56,25 +56,3 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-// Slide Show Functionality
-let slideIndex = 0;
-showSlides();
-// Function to display slides in a slideshow
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; // Hide all slides
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1; // Restart slideshow if at the end
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", ""); // Remove active class from dots
-  }
-  slides[slideIndex - 1].style.display = "block"; // Display current slide
-  dots[slideIndex - 1].className += " active"; // Add active class to current dot
-  setTimeout(showSlides, 3000); // Change slide every 3 seconds
-}
