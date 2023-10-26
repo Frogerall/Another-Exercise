@@ -65,14 +65,10 @@ a:hover {
   max-width: 90%;
   margin: 0 auto;
 }
-.hero-section h1 {
-  font-size: 3em;
-  font-weight: bold;
-}
 .hero-section p {
   font-size: 1.2em;
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   line-height: 2em;
   width: 80%;
 }
@@ -100,14 +96,16 @@ a:hover {
 .about-me-section {
   display: flex;
   background: #f4f4f4;
-  max-width: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 8em;
+  padding: 10em 1em;
 }
 .profile-picture {
-  max-width: 350px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
 }
@@ -142,38 +140,38 @@ a:hover {
 }
 /* Testimonials */
 .testimonials-section {
-  background: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+  background: #f4f4f4;
   margin-bottom: 0.3em;
-  display: flex;
-  gap: 1em;
-  padding: 1em;
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
 }
 .testimonial {
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.486);
+  margin-bottom: 30px;
 }
-.testimonial:hover {
-  border: 3px solid black;
+.testimonial p {
+  font-size: 18px;
+  color: #333;
 }
-.testimonial img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
+.recommendation {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
 }
-
 /* Contact Form */
 .contact-section {
   text-align: center;
-  padding: 8em 2em;
+  padding: 80px 20px;
   background: #20b46f;
-  display: flex;
-  justify-content: space-around;
+}
+.contact-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.contact-section h2 {
+  margin-bottom: 1.3em;
 }
 .contact-button {
+  display: inline-block;
   background-color: rgb(81, 211, 172);
   padding: 1em 2em;
   text-decoration: none;
@@ -192,7 +190,7 @@ a:hover {
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1em;
+  font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -206,16 +204,12 @@ a:hover {
   color: #333;
 }
 .contact-info {
-  font-size: 1.1em;
-  text-align: left;
-}
-.contact-info p {
-  margin-top: 1em;
+  margin-top: 30px;
+  font-size: 18px;
 }
 .contact-info a {
   color: black;
   transition: color 0.15s;
-  padding: 0;
 }
 .contact-info a:hover {
   color: rgb(212, 205, 205);
