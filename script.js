@@ -1,58 +1,53 @@
-// Menu Bar Functionality
-const menuIcon = document.querySelector(".menu-icon");
-const panel = document.querySelector(".panel");
-const closeButton = document.querySelector(".close-button");
-const panelOverlay = document.querySelector(".panel-overlay");
-let isPanelOpen = false;
-// Event listeners for menu icon and close button
-menuIcon.addEventListener("click", togglePanel);
-closeButton.addEventListener("click", togglePanel);
-// Function to toggle the panel visibility
-function togglePanel() {
-  if (isPanelOpen) {
-    // Close the panel
-    panel.style.right = "-300px";
-    panelOverlay.style.display = "none";
-  } else {
-    // Open the panel
-    panel.style.right = "0";
-    panelOverlay.style.display = "block";
-    panelOverlay.style.visibility = "visible";
-    panelOverlay.style.opacity = "1";
-  }
-  isPanelOpen = !isPanelOpen; // Toggle panel state
-}
-// Smooth Scroll Behavior for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    // Smooth scroll to the target section
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
   });
 });
-// Scroll to Top Button Behavior
+
 window.onscroll = function () {
   var scrollButton = document.getElementById("scrollButton");
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    // Show scroll to top button when scrolled down
     scrollButton.classList.remove("hide-button");
   } else {
-    // Hide scroll to top button when at the top
     scrollButton.classList.add("hide-button");
   }
 };
-// // Function to scroll to the top of the page
-function scrollToTop() {
-  // Find the element to scroll to (in this case, the element with id "top")
-  const topElement = document.getElementById("top");
 
-  // Scroll to the top element with smooth behavior
+function scrollToTop() {
+  const topElement = document.getElementById("top");
   topElement.scrollIntoView({
     behavior: "smooth",
   });
 }
+let navBar = document.querySelector(".nav-menu");
+let menuToggle = document.querySelector(".nav-toggler");
+let hide = document.querySelector(".hide");
+
+function handleOutsideClick(event) {
+  if (navBar.classList.contains("open") && !navBar.contains(event.target)) {
+    navBar.classList.remove("open");
+    document.body.removeEventListener("click", handleOutsideClick);
+  }
+}
+
+menuToggle.addEventListener("click", (event) => {
+  event.stopPropagation(); // Prevent the click event from reaching the body
+  navBar.classList.toggle("open");
+  if (navBar.classList.contains("open")) {
+    document.body.addEventListener("click", handleOutsideClick);
+  } else {
+    document.body.removeEventListener("click", handleOutsideClick);
+  }
+});
+
+hide.addEventListener("click", (event) => {
+  event.stopPropagation(); // Prevent the click event from reaching the body
+  navBar.classList.remove("open");
+  document.body.removeEventListener("click", handleOutsideClick);
+});
