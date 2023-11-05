@@ -5,167 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Portfolio</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,200;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <div class="heading" id="top">
-      <header>
-        <nav class="navbar">
-          <div class="nav-brand">
-            <a href="#nav-logo"><strong>Nav Logo</strong></a>
+    <header>
+      <nav class="navbar" id="top">
+        <div class="nav-brand"></div>
+        <div class="nav-toggler">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="nav-menu">
+          <div class="hide">
+            <i class="bi bi-x-square"></i>
           </div>
-          <div class="nav-toggler">
-            <i class="bi bi-list"></i>
-          </div>
-          <div class="nav-menu">
-            <div class="hide">
-              <i class="bi bi-x-square"></i>
-            </div>
 
-            <div class="nav-list">
-              <a href="#nav-link" class="nav-link">Home</a>
-              <a href="#nav-link" class="nav-link">Products</a>
-              <a href="#nav-link" class="nav-link">Articles</a>
-              <a href="#nav-link" class="nav-link">News</a>
-              <a href="#nav-link" class="nav-link">About us</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="hero-section">
-        <h1>Hello, I'm Adrian, Let's Build Something Amazing!</h1>
-        <p>"Designing Dreams into Digital Reality!"</p>
-        <a href="#about" class="cta-button">Get Started</a>
-      </div>
-    </div>
+          <ul class="nav-list">
+            <li class="nav-link"><a href="#nav-link">Home</a></li>
+            <li class="nav-link"><a href="#nav-link">Portfolio</a></li>
+            <li class="nav-link"><a href="#nav-link">Service</a></li>
+            <li class="nav-link"><a href="#nav-link">Blog</a></li>
+            <li class="nav-link"><a href="#nav-link">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
-      <div class="about-me-section" id="about">
-        <img
-          src="images/profile.jfif"
-          alt="Your Name"
-          class="profile-picture"
-        />
-        <div class="bio">
-          <span class="my-name">Hey there!</span>
-          <p>
-            Adrian here! I'm passionate about Programming. With 999 years of
-            experience in Tutorial, I specialize in Googling. I enjoy browsing
-            Stackoverflow.
-          </p>
-          <div class="skills">
-            <p>
-              <strong>Skills</strong>: HTML, CSS, JavaScript, PHP, Photoshop,
-              UI/UX Design
-            </p>
-          </div>
+      <section class="hero">
+        <div class="social">
+          <i class="bi-facebook"></i>
+          <i class="bi-linkedin"></i>
+          <i class="bi-github"></i>
+          <i class="bi-twitter"></i>
         </div>
-      </div>
-
-      <div class="projects-section" id="project">
-        <h2>My Projects</h2>
-      </div>
-
-      <div class="testimonials-section">
-        <div class="testimonial">
-          <h1>Client</h1>
-          <img src="https://picsum.photos/300/300" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            atque molestiae placeat, cum ipsa doloribus aliquam consequatur
-            sequi rerum, sint sunt ex, non maiores at!
-          </p>
+        <div class="heading">
+          <h1>
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='[ "Hi, Im Adrian.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </h1>
         </div>
-        <div class="testimonial">
-          <h1>Client</h1>
-          <img src="https://picsum.photos/300/301" alt="" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-            eaque eum voluptatem temporibus. Quos quidem vero officiis harum
-            nemo vel suscipit officia maxime molestias. Omnis!
-          </p>
-        </div>
-        <div class="testimonial">
-          <h1>Client</h1>
-          <img src="https://picsum.photos/300/302" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-            eligendi autem ab incidunt, nesciunt accusamus debitis ipsum velit
-            alias ullam voluptates distinctio quam deleniti voluptatibus.
-          </p>
-        </div>
-      </div>
-
-      <div class="contact-section" id="contact">
-        <div class="contact-form">
-          <h2>Contact Me</h2>
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" />
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="contact-button">Submit</button>
-        </div>
-
-        <div class="contact-info">
-          <h3>Contact Details</h3>
-          <i class="bi bi-envelope"></i>
-          <p>Email: saliticoadrian@gmail.com</p>
-          <i class="bi bi-telephone"></i>
-          <p>Contact: 63+ 9195932474</p>
-          <i class="bi bi-globe"></i>
-          <p>Website:</p>
-          <a href="http://salproj.great-site.net/">http://salproj.tech |</a>
-          <a href="http://salproj.great-site.net"
-            >http://salproj.great-site.net</a
-          >
-          <div class="social-links">
-            <a href="https://linkedin.com/in/nairda4" target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a href="https://www.facebook.com/nairda4" target="_blank"
-              ><i class="bi bi-facebook"></i
-            ></a>
-            <a href="https://github.com/frogerall" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </div>
-        </div>
+      </section>
+      <div class="horizontal-line">
+        <span class="line-text"><a href="">Download CV</a></span>
       </div>
     </main>
 
-    <div class="footer">
-      <div class="footer-info">
-        <div class="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-copyright">
-          &copy; 2023 John Adrian Salitico. All rights reserved.
-        </div>
-      </div>
-      <div class="footer-buttons" id="scrollButton">
-        <button class="hide-button" onclick="scrollToTop()">↑</button>
-      </div>
-    </div>
     <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
