@@ -80,7 +80,6 @@
 }
 .hero {
   margin: 0.5em;
-  background-color: var(--neutral);
   height: 70vh;
   position: relative;
 }
@@ -89,7 +88,7 @@
   font-size: xx-large;
   position: absolute;
   top: 25%;
-  left: 10%;
+  left: 5%;
 }
 .wrap {
   font-size: 1.5em;
@@ -127,6 +126,9 @@
   background-color: #fff;
   padding: 0 10px;
 }
+span {
+  transition: all 0.3s ease-in-out;
+}
 span a {
   background-color: var(--primary);
   color: var(--neutral);
@@ -135,6 +137,12 @@ span a {
 }
 .horizontal-line span a:hover {
   background-color: var(--accent);
+}
+.horizontal-line span:hover {
+  transform: scale(0.9);
+}
+.horizontal-line a:active {
+  opacity: 0.9;
 }
 
 @media (min-width: 768px) {
@@ -166,7 +174,6 @@ span a {
   .nav-link a:hover {
     background-color: var(--accent);
     color: var(--neutral);
-    border-bottom: 3px solid var(--primary);
   }
   .nav-toggler {
     display: none;
@@ -177,4 +184,16 @@ span a {
   .hero {
     flex-direction: row;
   }
+}
+
+#particles-js {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: var(--neutral);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  right: 3em;
 }
