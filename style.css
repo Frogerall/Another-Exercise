@@ -33,9 +33,12 @@
 .nav-brand:hover {
   transform: translateX(10%);
 }
-.nav-toggler {
+.nav-toggler i {
   color: var(--primary);
   font-size: xx-large;
+}
+.nav-toggler:hover {
+  transform: scale(0.8);
 }
 .nav-menu {
   position: fixed;
@@ -75,29 +78,35 @@
 }
 .hide {
   color: var(--neutral);
-  font-size: 2.7em;
+  font-size: 1.8em;
   padding: 10px;
+}
+.hide i:hover {
+  transform: scale(01.8em);
+  color: var(--accent);
+  transform: rotate(45deg);
+}
+.hide i:active {
+  opacity: 0.8;
 }
 .hero {
   margin: 0.5em;
   height: 70vh;
   position: relative;
 }
-.typewrite {
-  color: var(--primary);
-  font-size: xx-large;
+#particles-js {
   position: absolute;
-  top: 25%;
-  left: 5%;
-}
-.wrap {
-  font-size: 1.5em;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 3em;
+  background-color: var(--neutral);
 }
 .social {
   position: absolute;
   bottom: 1em;
-  right: 0.5em;
-  font-size: xx-large;
+  right: 0.3em;
+  font-size: x-large;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -111,6 +120,28 @@
 .social a:hover {
   color: var(--accent);
   transform: rotate(45deg);
+}
+.social a:active {
+  opacity: 0.8;
+}
+.heading h1 a {
+  font-size: 1.5em;
+  color: var(--primary);
+  position: absolute;
+  max-width: 15ch;
+  top: 20%;
+  left: 3%;
+  letter-spacing: -2px;
+}
+
+.para {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  max-width: 30ch;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+  line-height: 1.6;
 }
 
 .horizontal-line {
@@ -127,26 +158,23 @@
   top: -10px;
   background-color: #fff;
   padding: 0 10px;
-}
-span {
   transition: all 0.3s ease-in-out;
 }
-span a {
+.line-text a {
   background-color: var(--primary);
   color: var(--neutral);
   padding: 15px;
   transition: background-color 0.3s ease;
 }
-.horizontal-line span a:hover {
-  background-color: var(--accent);
-}
-.horizontal-line span:hover {
+.line-text:hover {
   transform: scale(0.9);
 }
-.horizontal-line a:active {
+.line-text a:hover {
+  background-color: var(--accent);
+}
+.line-text a:active {
   opacity: 0.9;
 }
-
 @media (min-width: 768px) {
   .navbar {
     padding: 1em 3em;
@@ -183,19 +211,22 @@ span a {
   .hide {
     display: none;
   }
-  .hero {
-    flex-direction: row;
+  .heading h1 a {
+    left: 5%;
+    top: 25%;
+  }
+  .para {
+    top: 35%;
+    max-width: 50ch;
+  }
+  .social {
+    font-size: 1.8em;
   }
 }
-
-#particles-js {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  background-color: var(--neutral);
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  right: 3em;
+@media (min-width: 376px) and (max-width: 768px) {
+  .heading h1 a {
+    font-size: 1.4em;
+    left: 5%;
+    top: 30%;
+  }
 }

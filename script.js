@@ -8,7 +8,6 @@ function handleOutsideClick(event) {
     document.body.removeEventListener("click", handleOutsideClick);
   }
 }
-
 menuToggle.addEventListener("click", (event) => {
   event.stopPropagation(); // Prevent the click event from reaching the body
   navBar.classList.toggle("open");
@@ -80,7 +79,7 @@ window.onload = function () {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #353535}";
+  css.innerHTML = ".typewrite > .wrap { border-right: 2px solid #353535}";
   document.body.appendChild(css);
 };
 // Animation / Particle
