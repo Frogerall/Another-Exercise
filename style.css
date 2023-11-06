@@ -104,10 +104,11 @@
   justify-content: center;
   align-items: baseline;
 }
-.social i {
+.social a {
+  color: var(--primary);
   transition: all 0.3s ease;
 }
-.social i:hover {
+.social a:hover {
   color: var(--accent);
   transform: rotate(45deg);
 }
