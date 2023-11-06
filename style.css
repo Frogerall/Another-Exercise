@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--neutral);
-  padding: 0 0 0 0;
+  padding: 0 0.5em 0 0;
 }
 .nav-brand {
   max-width: 100%;
