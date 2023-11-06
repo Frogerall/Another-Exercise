@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--neutral);
-  padding: 0 1em;
+  padding: 0 0 0 0;
 }
 .nav-brand {
   max-width: 100%;
@@ -94,7 +94,7 @@ body {
   opacity: 0.8;
 }
 .hero {
-  margin: 0.5em;
+  padding: 0 1em;
   height: 70vh;
   display: flex;
   flex-direction: column;
