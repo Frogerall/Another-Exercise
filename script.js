@@ -1,7 +1,6 @@
 let navBar = document.querySelector(".nav-menu");
 let menuToggle = document.querySelector(".nav-toggler");
 let hide = document.querySelector(".hide");
-
 function handleOutsideClick(event) {
   if (navBar.classList.contains("open") && !navBar.contains(event.target)) {
     navBar.classList.remove("open");
@@ -17,7 +16,6 @@ menuToggle.addEventListener("click", (event) => {
     document.body.removeEventListener("click", handleOutsideClick);
   }
 });
-
 hide.addEventListener("click", (event) => {
   event.stopPropagation(); // Prevent the click event from reaching the body
   navBar.classList.remove("open");
@@ -33,7 +31,6 @@ var TxtType = function (el, toRotate, period) {
   this.tick();
   this.isDeleting = false;
 };
-
 TxtType.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
@@ -66,7 +63,6 @@ TxtType.prototype.tick = function () {
     that.tick();
   }, delta);
 };
-
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
@@ -138,3 +134,26 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+// Active Link
+function isSectionInView(section) {
+  const sectionOffsetTop = section.offsetTop;
+  const sectionVisibleHeight = section.clientHeight;
+  const scrollY = window.scrollY;
+  return (
+    scrollY >= sectionOffsetTop &&
+    scrollY < sectionOffsetTop + sectionVisibleHeight
+  );
+}
+function updateActiveNavigationLinks() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  sections.forEach((section, index) => {
+    if (isSectionInView(section)) {
+      navLinks[index].classList.add("active");
+    } else {
+      navLinks[index].classList.remove("active");
+    }
+  });
+}
+document.addEventListener("scroll", updateActiveNavigationLinks);
