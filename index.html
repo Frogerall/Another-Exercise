@@ -1,151 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adrian Portfolio</title>
-    <link rel="icon" href="images/logo.png" type="image/png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,200;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar" id="top">
-        <div class="nav-brand"></div>
-        <div class="nav-toggler">
-          <i class="bi bi-list"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrian Portfolio</title>
+  <link rel="icon" href="images/logo-bg.webp" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,200;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" id="top">
+      <div class="nav-brand"></div>
+      <div class="nav-toggler">
+        <i class="bi bi-list"></i>
+      </div>
+      <div class="nav-menu">
+        <div class="hide">
+          <i class="bi bi-x-square"></i>
         </div>
-        <div class="nav-menu">
-          <div class="hide">
-            <i class="bi bi-x-square"></i>
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="#section-1" class="active">Home</a>
+          </li>
+          <li class="nav-link"><a href="#section-2">About</a></li>
+          <li class="nav-link"><a href="#nav-link">Projects</a></li>
+          <li class="nav-link"><a href="#nav-link">Services</a></li>
+          <li class="nav-link"><a href="#nav-link">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="section-1">
+      <div id="particles-js"></div>
+      <div class="social">
+        <a href="https://facebook.com/nairda4">
+          <i class="bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/nairda4/"><i class="bi-linkedin"></i></a>
+        <a href="https://github.com/Frogerall"> <i class="bi-github"></i></a>
+        <a href="https://twitter.com/Saliticoadrian"><i class="bi-twitter"> </i></a>
+      </div>
+      <div class="hero-content">
+        <a class="img-wrap" href="#">
+          <img src="images/profile.webp" />
+        </a>
+        <div class="heading">
+          <h1>
+            <a href="" class="typewrite" data-period="10000" data-type='["Front-End Developer."]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
+        </div>
+        <p class="para">
+          Hi, Im Adrian Salitico. A passionate Web Developer based in the City
+          of Bulacan, Philippines. ☕
+        </p>
+        <span class="hero-button"><a href="">DOWNLOAD CV</a></span>
+      </div>
+    </section>
+    <div class="horizontal-line">
+      <div class="divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+    <section class="about" id="section-2">
+
+      <h1>Tech Stack</h1>
+      <div class="about-wrap">
+        <div class="detail-grid">
+          <div class="card">
+            <span class="content-1">
+              <i class="fa-brands fa-html5" style="color: #ff7605"></i></span>
           </div>
-          <ul class="nav-list">
-            <li class="nav-link">
-              <a href="#nav-link" class="active">Home</a>
-            </li>
-            <li class="nav-link"><a href="#nav-link">About</a></li>
-            <li class="nav-link"><a href="#nav-link">Service</a></li>
-            <li class="nav-link"><a href="#nav-link">Blog</a></li>
-            <li class="nav-link"><a href="#nav-link">About</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" id="section-1">
-        <div id="particles-js"></div>
-        <div class="social">
-          <a href="https://facebook.com/nairda4">
-            <i class="bi-facebook"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/nairda4/"
-            ><i class="bi-linkedin"></i
-          ></a>
-          <a href="https://github.com/Frogerall"> <i class="bi-github"></i></a>
-          <a href="https://twitter.com/Saliticoadrian"
-            ><i class="bi-twitter"> </i
-          ></a>
-        </div>
-        <div class="hero-content">
-          <a class="img-wrap" href="#">
-            <img src="images/profile.jfif" />
-          </a>
-          <div class="heading">
-            <h1>
-              <a
-                href=""
-                class="typewrite"
-                data-period="10000"
-                data-type='["Front-End Developer."]'
-              >
-                <span class="wrap"></span>
-              </a>
-            </h1>
+          <div class="card"> <span class="content-2"><i class="fa-brands fa-js"
+                style="color: rgb(179, 235, 24)"></i></span></div>
+          <div class="card"> <span class="content-3"><i class="fa-brands fa-css3-alt" style="color: #17c8d1"></i></span>
           </div>
-          <p class="para">
-            Hi, Im Adrian Salitico. A passionate Web Developer based in the City
-            of Bulacan, Philippines. ☕
+          <div class="card"> <span class="content-4"><i class="fa-brands fa-sass" style="color: #f812d9"></i></div>
+          <div class="card">
+            <span class="content-5"><i class="fa-brands fa-wordpress-simple" style="color: #1291f8"></i></span>
+          </div>
+          <div class="card"> <span class="content-6"><i class="fa-brands fa-bootstrap"
+                style="color: #750967"></i></span></div>
+          <div class="card"><span class="content-7"><i class="fa-brands fa-git-alt" style="color: #1fda47"></i></span>
+          </div>
+          <div class="card"><span class="content-8"><i class="fa-brands fa-php" style="color: #1235f8"></i></span></div>
+          <div class="card"><span class="content-9"><i class="fa-brands fa-github" style="color: #000000"></i></span>
+          </div>
+        </div>
+        <div class="detail">
+          <p>
+            <strong>This</strong> is currently my tech stack, its might not be plenty but what i pursue is to get a good
+            grasp on each of
+            one of them. You can see my progress on each of them by clicking by their icon.
           </p>
-          <span class="line-text"><a href="">DOWNLOAD CV</a></span>
-        </div>
-      </section>
-      <div class="horizontal-line">
-        <div class="divider">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              class="shape-fill"
-            ></path>
-          </svg>
+          <br>
+          <p class="para-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis delectus repellendus minima? Laborum, voluptatem
+            itaque.
+          </p>
+          <br>
+          <p class="para-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Blanditiis architecto odio cumque eaque temporibus esse quod in
+            neque adipisci officia?
+          </p>
+          <br>
+          <button>Okay</button>
         </div>
       </div>
-      <section class="about" id="section-2">
-        <div class="row">
-          <div class="about-info">
-            <div class="row">
-              <div class="col">
-                <h3>Tech Stack</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JAVASCRIPT</li>
-                  <li>BOOTSTRAP</li>
-                  <li>PHP</li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Education</h3>
-                <ul>
-                  <li>Associate Degree - Computer Technology</li>
-                  <li>Bachelor Degree - Information Technology</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Experience</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat iste expedita quo accusantium omnis, aliquid
-                  repellendus obcaecati blanditiis praesentium adipisci.
-                </p>
-              </div>
-              <div class="col">
-                <h3>About Me</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat iste expedita quo accusantium omnis, aliquid
-                  repellendus obcaecati blanditiis praesentium adipisci.
-                </p>
-              </div>
-            </div>
-          </div>
+
+
+      </div>
+    </section>
+
+    <section class="certificates" id="section-3">
+
+      <h1>Certificates</h1>
+
+      <div class="about-container">
+        <div class="cert-1">
+          <div class="img-wrap"><img src="images/html-css.webp" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis, error sit nesciuntrecusandae
+            ipsa eaque nostrum vero dolores blanditiis enim et commodi, reiciendis nihil!</p>
         </div>
-      </section>
-    </main>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+        <div class="cert-1">
+
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt voluptates sapiente corporis
+            fugit eaque iste eligendi, at ex earum distinctio, nemo, consequuntur perspiciatis minima?</p>
+          <div class="img-wrap"><img src="images/javascript.webp" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="section-4"></section>
+  </main>
+  <footer>
+    <div class="group">
+      <div class="list">
+        <h3>Quick Links</h3>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Certificates</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+      </div>
+      <div class="list">
+        <h3>Quick Links</h3>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Certificates</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+      </div>
+      <div class="list">
+        <h3>Quick Links</h3>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Certificates</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+      </div>
+
+    </div>
+    <hr>
+    <p>All rights Reserved. | Made with Love by Adrian Salitico </p>
+  </footer>
+  <script src="https://kit.fontawesome.com/49a2dfc6bc.js" crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

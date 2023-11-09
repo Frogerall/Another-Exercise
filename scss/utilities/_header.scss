@@ -1,0 +1,155 @@
+@use '../abstracts/' as *;
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $neutral;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+
+    .nav-brand {
+        width: 150px;
+        height: 100px;
+        background: url("../../images/logo-bg.webp") no-repeat center (center / cover);
+        transition: all 0.5s ease-in-out;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    .nav-toggler {
+
+        i {
+            padding-right: 10px;
+        }
+
+        i::before {
+            color: $primary;
+            font-size: xx-large;
+        }
+
+        &:hover {
+            transform: scale(0.8);
+        }
+
+        @include min-break(920px) {
+            display: none;
+
+        }
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+
+    @include min-break(920px) {
+        padding: 1em 3em 0em;
+    }
+
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: $primary;
+    width: 80%;
+    z-index: 999;
+    display: flex;
+    justify-content: start;
+    gap: 3em;
+    flex-direction: column;
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+
+    .hide {
+        color: $neutral;
+        font-size: 1.8em;
+        padding: 10px;
+
+        i {
+            &:hover {
+                transform: scale(1.8em);
+                color: $accent;
+                transform: rotate(45deg);
+            }
+
+            &:active {
+                opacity: 0.8;
+            }
+        }
+
+        @include min-break(920px) {
+            display: none;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+
+        li {
+            padding: 1em;
+            transition: background-color 0.2s ease, color 0.15s ease;
+
+            &:hover {
+                background-color: $accent;
+            }
+
+            a {
+                color: $neutral;
+                align-self: center;
+
+            }
+
+            @include min-break(920px) {
+                padding: 0;
+
+                &:hover {
+                    background-color: white;
+                }
+
+                a {
+                    color: $primary;
+                    padding: 1em;
+                    transition: all 0.2s ease-in-out;
+                    border-left: 2px solid white;
+
+                    &:hover,
+                    &.active {
+                        background-color: $accent;
+                        color: $neutral;
+                    }
+                }
+            }
+        }
+
+        @include min-break(920px) {
+            flex-direction: row;
+        }
+    }
+
+    @include min-break(920px) {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        justify-content: initial;
+        transform: initial;
+        transition: initial;
+    }
+}

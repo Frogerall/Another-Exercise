@@ -90,7 +90,7 @@ particlesJS("particles-js", {
       image: { src: "img/github.svg", width: 100, height: 100 },
     },
     opacity: {
-      value: 0.5,
+      value: 1,
       random: false,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
@@ -101,14 +101,14 @@ particlesJS("particles-js", {
     },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 200,
       color: "#353535",
-      opacity: 0.4,
+      opacity: 0.3,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 2,
       direction: "none",
       random: false,
       straight: false,
@@ -136,7 +136,7 @@ particlesJS("particles-js", {
 });
 // Active Link
 function isSectionInView(section) {
-  const sectionOffsetTop = section.offsetTop;
+  const sectionOffsetTop = section.offsetTop - 250;
   const sectionVisibleHeight = section.clientHeight;
   const scrollY = window.scrollY;
   return (
@@ -157,3 +157,60 @@ function updateActiveNavigationLinks() {
   });
 }
 document.addEventListener("scroll", updateActiveNavigationLinks);
+
+// Tech Stack
+let headStack = document.querySelector(".detail p");
+let paraCon = document.querySelector(".para-1");
+let paraTet = document.querySelector(".para-2");
+let button1 = (document.querySelector(".content-1").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+let button2 = (document.querySelector(".content-2").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button3 = (document.querySelector(".content-3").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button4 = (document.querySelector(".content-4").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button5 = (document.querySelector(".content-4").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button6 = (document.querySelector(".content-5").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.innerHTML = "<ul><li>W3school</li></ul>";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button7 = (document.querySelector(".content-6").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button8 = (document.querySelector(".content-7").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERdsadasdasdsERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
+
+let button9 = (document.querySelector(".content-8").onclick = () => {
+  headStack.textContent = "LOREERERAERAERERERERER";
+  paraCon.textContent = "testRERERERERERERERE";
+  paraTet.textContent = "testRERERERERERERERER";
+});
