@@ -1,56 +1,42 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 footer {
-
-    background-color: $primary;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .group {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-
-    .group {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-
-
-
-
-        .list {
-            display: flex;
-            flex-direction: column;
-            margin: 0 2em;
-
-            color: $neutral;
-
-            a {
-                color: $neutral;
-                opacity: 0.8;
-            }
-        }
-
-        .contact-form {
-            form {
-                input {
-                    max-width: fit-content;
-                }
-            }
-
-            align-self: center;
-
-            h3 {
-                color: $neutral;
-            }
-        }
-    }
-
-    hr {
-        border-color: rgba(128, 128, 128, 0.671);
-    }
-
-    p {
-        text-align: center;
-        padding: 5px;
+    flex-direction: row;
+    .list {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2em;
+      color: $neutral;
+      a {
         color: $neutral;
+        opacity: 0.8;
+      }
     }
-
+    .contact-form {
+      form {
+        input {
+          max-width: fit-content;
+        }
+      }
+      align-self: center;
+      h3 {
+        color: $neutral;
+      }
+    }
+  }
+  hr {
+    border-color: rgba(128, 128, 128, 0.671);
+  }
+  p {
+    text-align: center;
+    padding: 5px;
+    color: $neutral;
+  }
 }

@@ -1,143 +1,57 @@
-@use '../abstracts/' as *;
-
-
-
-
-
-
-
+@use "../abstracts/" as *;
 .about {
-    margin-top: 5em;
-
-
-
-    h1 {
-        text-align: center;
-        font-size: 3em;
-        color: $primary;
-    }
-
-    &-wrap {
-
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        margin: 5em auto;
-        border: 3px solid rgba(148, 148, 148, 0.089);
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.096);
-        gap: 3em;
-        padding: 3em;
-
-
-
-
-        @include min-break(768px) {
-            flex-direction: row;
-        }
-
-        .detail-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            width: 100%;
-
-            gap: 0.3em;
-
-
-
-            .card {
-                display: grid;
-                place-items: center;
-                transition: all 0.3s ease-in-out;
-                box-shadow: 1px 0 10px rgba(0, 0, 0, 0.315);
-
-                background: url(../../images/Sprinkle.svg);
-                background-size: cover;
-
-                i::before {
-                    font-size: 3em;
-
-                }
-
-                &:hover {
-                    transform: scale(0.8);
-                }
-            }
-
-            @include min-break(768px) {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-
-            }
-
-        }
-
-        .detail {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-            padding: 1.5em;
-
-
-        }
-    }
-}
-
-
-
-.certificates {
+  margin-top: 5em;
+  h1 {
     text-align: center;
-    width: 100%;
-
-
-
-    h1 {
-        font-size: 3em;
-        margin: 2.5em 0;
+    font-size: 3em;
+    color: $primary;
+  }
+  &-wrap {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+    border: 3px solid rgba(148, 148, 148, 0.089);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.096);
+    gap: 3em;
+    padding: 3em;
+    @include min-break(768px) {
+      flex-direction: row;
     }
-
-    .about-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 5em;
-        width: 80%;
-        margin: 0 auto;
-        height: auto;
-
-        .cert-1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1em;
-            margin-bottom: 3.5em;
-
-
-
-            .img-wrap {
-                max-width: 100%;
-
-                img {
-                    max-width: 100%;
-                }
-            }
-
-            p {
-                max-width: 50ch;
-                text-align: justify;
-            }
-
-            @include min-break(768px) {
-                flex-direction: row;
-            }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      width: 100%;
+      gap: 0.3em;
+      .card {
+        display: grid;
+        place-items: center;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.315);
+        background: url(../../images/Sprinkle.svg);
+        background-size: cover;
+        i::before {
+          font-size: 3em;
         }
+        &:hover {
+          transform: scale(0.8);
+        }
+      }
+      @include min-break(768px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
     }
+    .detail {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 1.5em;
+    }
+  }
 }
-
-
-
 .services {
-    height: 100vh;
+  height: 100vh;
 }

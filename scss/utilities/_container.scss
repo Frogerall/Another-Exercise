@@ -1,36 +1,33 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 .horizontal-line {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  .divider {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 3px;
-    background-color: $primary;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+    line-height: 0;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(116% + 1.3px);
+      height: 30px;
+      transform: rotateY(180deg);
 
-    .divider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-
-        svg {
-            position: relative;
-            display: block;
-            width: calc(116% + 1.3px);
-            height: 30px;
-            transform: rotateY(180deg);
-
-            @include between-break(768px, 1023px) {
-                width: calc(116% + 1.3px);
-                height: 25px;
-            }
-        }
-
-        .shape-fill {
-            fill: #353535;
-        }
+      @include between-break(768px, 1023px) {
+        width: calc(116% + 1.3px);
+        height: 25px;
+      }
     }
+    .shape-fill {
+      fill: #353535;
+    }
+  }
 }

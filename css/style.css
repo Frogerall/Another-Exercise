@@ -71,6 +71,10 @@ body {
   padding: 1.5em;
 }
 
+.services {
+  height: 100vh;
+}
+
 .certificates {
   text-align: center;
   width: 100%;
@@ -110,14 +114,6 @@ body {
   .certificates .about-container .cert-1 {
     flex-direction: row;
   }
-}
-
-.services {
-  height: 100vh;
-}
-
-.project {
-  height: 100vh;
 }
 
 .navbar {
@@ -438,4 +434,4 @@ footer p {
     max-width: 50%;
     padding-left: 4.5em;
   }
-}/*# sourceMappingURL=style.css.map */
+}
