@@ -2,10 +2,6 @@
 .certificates {
   text-align: center;
   width: 100%;
-  h1 {
-    font-size: 3em;
-    margin: 2.5em 0;
-  }
   .about-container {
     display: flex;
     flex-direction: column;
@@ -33,6 +29,11 @@
       }
       @include min-break(768px) {
         flex-direction: row;
+      }
+    }
+    .cert-2 {
+      @include min-break(768px) {
+        flex-direction: row-reverse;
       }
     }
   }

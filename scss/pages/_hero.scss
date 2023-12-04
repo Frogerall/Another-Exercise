@@ -1,0 +1,101 @@
+@use "../abstracts/" as *;
+
+.hero {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 90vh;
+}
+.social {
+ position: absolute;
+ bottom: 4em;
+ right: 0.6em;
+ font-size: x-large;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5em;
+ justify-content: center;
+ align-items: baseline;
+
+ a {
+  color: $primary;
+  transition: all 0.3s ease;
+
+  &:hover {
+   color: $accent;
+   transform: rotate(45deg);
+  }
+
+  &:active {
+   opacity: 0.8;
+  }
+ }
+
+ @include min-break(920px) {
+  font-size: 1.8em;
+ }
+}
+.hero-content {
+ width: 100%;
+ padding: 1em;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ .img-wrap {
+  width: 100%;
+  height: 35%;
+  img {
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 250px;
+   border: 3px solid black;
+  }
+ }
+
+ @include between-break(768px, 1023px) {
+  padding-left: 3.3em;
+ }
+ @include min-break(920px) {
+  max-width: 100%;
+  padding-left: 4.5em;
+ }
+}
+.heading {
+ margin-top: 0.5em;
+ h1 {
+  a {
+   font-size: 1.5em;
+   color: $primary;
+   max-width: 15ch;
+   letter-spacing: -2px;
+  }
+ }
+}
+.para {
+ max-width: 30ch;
+ font-size: 14px;
+ color: rgb(107, 107, 107);
+ line-height: 1.6;
+ margin-bottom: 1.5em;
+
+ @include min-break(920px) {
+  max-width: 50ch;
+ }
+}
+.hero-button {
+ a {
+  background-color: $primary;
+  color: $neutral;
+  padding: 10px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+
+  &:hover {
+   background-color: $accent;
+  }
+
+  &:active {
+   opacity: 0.9;
+  }
+ }
+}

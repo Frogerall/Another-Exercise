@@ -1,55 +1,50 @@
 @use "../abstracts/" as *;
 .about {
-  margin-top: 5em;
-  h1 {
-    text-align: center;
-    font-size: 3em;
-    color: $primary;
+ margin-top: 5em;
+ h1 {
+  text-align: center;
+  font-size: 2em;
+  color: $primary;
+ }
+ &-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  @include min-break(768px) {
+   flex-direction: row;
+   padding: 3rem;
   }
-  &-wrap {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 5em auto;
-    border: 3px solid rgba(148, 148, 148, 0.089);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.096);
-    gap: 3em;
-    padding: 3em;
-    @include min-break(768px) {
-      flex-direction: row;
-    }
-    .detail-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      width: 100%;
-      gap: 0.3em;
-      .card {
-        display: grid;
-        place-items: center;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.315);
-        i::before {
-          font-size: 3em;
-        }
-        &:hover {
-          transform: scale(0.8);
-        }
-      }
-      @include min-break(768px) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-      }
-    }
-    .detail {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
-      padding: 1.5em;
-    }
-  }
+ }
 }
-.services {
-  height: 100vh;
+.detail-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ width: 100%;
+ @include min-break(768px) {
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+ }
+}
+.card {
+ display: grid;
+ place-items: center;
+ transition: all 0.3s ease-in-out;
+ box-shadow: 1px 1px 1px 1px rgba(158, 158, 158, 0.74);
+ i::before {
+  font-size: 3em;
+ }
+ &:hover {
+  transform: scale(0.8);
+  background-color: $accent;
+  color: $neutral;
+ }
+}
+.detail {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ width: 100%;
+ padding: 1.5em;
 }
